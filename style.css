@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Poiret+One&family=Quicksand&display=swap');
+/*
+font-family: "Ephesis", cursive;
+font-family: "Poiret One", sans-serif;
+font-family: "Quicksand", sans-serif;*/
+
+/* Grundinställningar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(174, 129, 216);
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  
+}
+
+/* Header & Navigation */
+header {
+  width: 100%;
+  position: fixed;
+  /* Gör att headern ligger fast */
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(79, 8, 107, 0.6);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* Gör att länkar bryts på mindre skärmar */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+header nav a,
+header nav span {
+  color: #3b0457;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: azure;
+  transform: scale(1.05);
+}
+
+/* innehåll i main */
+main {
+  margin-top: 80px;
+  /* Justeras efter headerns höjd */
+  margin-bottom: 80px;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* rubriker */
+h1 {
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  text-shadow: 0 0 3px #f1b4b4, 0 0 5px #0000FF;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+h2{
+  text-align: center;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.5em;
+}
+h3{
+  text-align: justify;
+  font-family: "Ephesis", cursive;
+  font-size: 2em;
+}
+
+/* bilder */
+.center-image {
+  display: block;
+  /* Gör bilden till ett block-element */
+  margin-left: auto;
+  /* Sätter vänster marginal till automatisk */
+  margin-right: auto;
+  /* Sätter höger marginal till automatisk */
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
+
+/* Text */
+p,
+article {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.div1 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* länkar */
+a {
+  color: rgb(49, 75, 101);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3b0457;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+  /* <-- centrera hela griden horisontellt */
+  text-align: justify;
+}
+.we-are {
+  grid-column: 1/2;
+  display: grid;
+}
+.how-we {
+  grid-column: 2/2;
+  display: grid;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: flex;
+    /* Länkar staplas på mindre skärmar */
+    gap: 0.5rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+   /* lägg pixel, px, på fonter i @media och använd sedan em på fonter ovanför @media. em läser px*em ex 20px*2em blir 40px på fonten*/
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
