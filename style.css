@@ -171,32 +171,38 @@ a:hover {
 }
 
 /* Responsiv design */
-/* Mellanstora skärmar – t.ex. surfplattor */
-@media (max-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    /* 2 kolumner */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: flex;
+    /* Länkar staplas på mindre skärmar */
+    gap: 0.5rem;
   }
 
-  .we-are,
-  .how-we {
-    grid-column: 1 / -1;
-    /* Gör dem fullbredd */
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    padding: 5px;
   }
 }
 
-/* 📱 Små skärmar – mobil */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-    /* 1 kolumn */
+@media (max-width: 480px) {
+
+  /* lägg pixel, px, på fonter i @media och använd sedan em på fonter ovanför @media. em läser px*em ex 20px*2em blir 40px på fonten*/
+  header nav a {
+    font-size: 1.2rem;
   }
 
-  .we-are,
-  .eve,
-  .sandra,
-  .how-we {
-    grid-column: 1 / -1;
-    /* alla tar hela bredden */
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }
