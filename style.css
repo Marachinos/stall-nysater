@@ -97,6 +97,7 @@ h3 {
   text-align: justify;
   font-family: "Ephesis", cursive;
   font-size: 2em;
+  text-align: center;
 }
 
 /* bilder */
@@ -137,72 +138,65 @@ a:hover {
 
 .grid {
   display: grid;
-  gap: 20px;
-  width: 60%;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 80%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  ;
   margin: 0 auto;
   /* <-- centrera hela griden horisontellt */
   text-align: justify;
+
 }
 
 .we-are {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
-  background-color: #0000ff;
 }
 
 .eve {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  background-color: aqua;
 }
 
 .sandra {
   grid-column: 2 / 2;
   grid-row: 2 / 3;
-  background-color: chocolate;
 }
 
 .how-we {
   grid-column: 1 / 3;
   grid-row: 4 / 4;
-  background-color: cornflowerblue;
 }
 
 /* Responsiv design */
-@media (max-width: 768px) {
-  header nav {
-    flex-direction: flex;
-    /* Länkar staplas på mindre skärmar */
-    gap: 0.5rem;
+/* Mellanstora skärmar – t.ex. surfplattor */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    /* 2 kolumner */
   }
 
-  header nav a {
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  .container {
-    padding: 5px;
+  .we-are,
+  .how-we {
+    grid-column: 1 / -1;
+    /* Gör dem fullbredd */
   }
 }
 
-@media (max-width: 480px) {
-
-  /* lägg pixel, px, på fonter i @media och använd sedan em på fonter ovanför @media. em läser px*em ex 20px*2em blir 40px på fonten*/
-  header nav a {
-    font-size: 1.2rem;
+/* 📱 Små skärmar – mobil */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    /* 1 kolumn */
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 0.9rem;
+  .we-are,
+  .eve,
+  .sandra,
+  .how-we {
+    grid-column: 1 / -1;
+    /* alla tar hela bredden */
   }
 }
