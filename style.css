@@ -124,6 +124,11 @@ article {
   margin-top: 20px;
 }
 
+.div1 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* länkar */
 a {
   color: rgb(49, 75, 101);
