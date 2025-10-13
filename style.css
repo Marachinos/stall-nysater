@@ -146,12 +146,12 @@ a:hover {
   column-gap: 20px;
   row-gap: 20px;
   width: 80%;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: auto;
   grid-auto-rows: auto;
   ;
   margin: 0 auto;
   /* <-- centrera hela griden horisontellt */
-  text-align: justify;
+  text-align: center;
 
 }
 
@@ -170,10 +170,16 @@ a:hover {
   grid-row: 2 / 3;
 }
 
+.how-we1 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
 .how-we {
   grid-column: 1 / 3;
-  grid-row: 4 / 4;
+  grid-row: 5 / 5;
 }
+
 
 /* Responsiv design */
 @media (max-width: 768px) {
@@ -195,6 +201,8 @@ a:hover {
     padding: 5px;
   }
 }
+
+
 
 @media (max-width: 480px) {
 
