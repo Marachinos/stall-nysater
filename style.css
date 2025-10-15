@@ -187,15 +187,15 @@ a:hover {
   }
 
   header nav a {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .container {
-    padding: 5px;
+    padding: 15px;
   }
 }
 
@@ -209,11 +209,11 @@ a:hover {
   }
 
   header nav a {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   p {
