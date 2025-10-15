@@ -9,8 +9,7 @@ font-family: "Quicksand", sans-serif;*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border-radius: 2%;
-}
+  }
 
 body {
   background-color: rgb(174, 129, 216);
@@ -140,8 +139,6 @@ a:hover {
   color: #3b0457;
 }
 
-
-
 .grid {
   display: grid;
   column-gap: 20px;
@@ -153,7 +150,6 @@ a:hover {
   margin: 0 auto;
   /* <-- centrera hela griden horisontellt */
   text-align: center;
-
 }
 
 .we-are {
@@ -206,12 +202,18 @@ a:hover {
 @media (max-width: 480px) {
 
   /* lägg pixel, px, på fonter i @media och använd sedan em på fonter ovanför @media. em läser px*em ex 20px*2em blir 40px på fonten*/
+  header nav {
+    flex-direction: flex;
+    /* Länkar staplas på mindre skärmar */
+    gap: 0.5rem;
+  }
+
   header nav a {
     font-size: 1.2rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   p {
