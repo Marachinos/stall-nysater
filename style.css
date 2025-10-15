@@ -74,7 +74,7 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px; /*flyttar innehållet neråt, ju högre siffra desto längre ner*/
   box-sizing: border-box;
 }
 
