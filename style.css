@@ -229,6 +229,14 @@ a:hover {
   line-height: 1.5;
   color: black;
 }
+.news-box h2 {
+  text-align: justify;
+  font-family: "Story Script", sans-serif; 
+  color: cornsilk;
+  font-size: 2em;
+  text-align: center;
+}
+
 .news-box h3 {
   text-align: justify;
   font-family: "Ephesis", cursive;
