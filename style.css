@@ -18,6 +18,13 @@ body {
   background-color: rgb(174, 129, 216);
   font-family: "Quicksand", sans-serif;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centrerar horisontellt */
+  justify-content: flex-start; /* placerar innehåll högst upp */
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 40px;     /* flyttar ner lite från toppen */
 }
 
 /* Header & Navigation */
@@ -62,20 +69,16 @@ header nav a:hover {
 /* innehåll i main */
 main {
   display: flex;
-  justify-content: center;
-  /* centrera horisontellt */
-  align-items: center;
-  /* centrera vertikalt */
+  justify-content: center;   /* centrera horisontellt */
+  align-items: flex-start;   /* placera texten högst upp */
   min-height: calc(100vh - 160px);
-  /* justerat för headern */
-  margin-top: 80px;
-  /* pga fixed header */
+  margin-top: 80px;         /* lite luft under headern (justera efter smak) */
 }
 
 /* Container */
 .container {
   max-width: 1000px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px; /*flyttar innehållet neråt, ju högre siffra desto längre ner*/
   box-sizing: border-box;
@@ -180,6 +183,46 @@ a:hover {
   grid-row: 5 / 5;
 }
 
+.news-list {
+  list-style-type: none;          /* tar bort punkterna */
+  margin: 60px auto 40px auto;
+  padding-left: 0;                /* tar bort intryckningen från listor */
+  max-width: 600px;
+  text-align: left;
+}
+
+.news-list li {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid rebeccapurple;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.news-list li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+.news-list p {
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #2c004f;
+  font-weight: 500;
+  margin: 0;
+}
+
+.news-date {
+  font-weight: bold;
+  color: rebeccapurple;
+  font-size: 1.05rem;
+  margin-right: 6px;
+}
+
+
 .image-and-news {
   display: flex;
   align-items: flex-start;
@@ -213,8 +256,8 @@ a:hover {
 }
 
 .news-box {
-  background-color: rebeccapurple;
-  border: 1px solid gray;
+  background-color: rgb(125, 67, 183);
+  border: 2px solid rebeccapurple;
   padding: 12px 16px;
   border-radius: 8px;
   max-width: 220px;
