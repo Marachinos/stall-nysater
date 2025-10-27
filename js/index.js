@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const container = document.querySelector(".image-and-news");
 
     const newsBox = document.createElement("div");
-    newsBox.classList.add("news-box");
+    newsBox.classList.add("news-boxen");
     newsBox.innerHTML = `
       <h3>Senaste nytt</h3>
       <p>25/10-25, Bergsåker<br>
