@@ -43,8 +43,7 @@ header {
 
 header nav {
   display: flex;
-  flex-wrap: wrap;
-  /* Gör att länkar bryts på mindre skärmar */
+  flex-wrap: wrap;  /* Gör att länkar bryts på mindre skärmar */
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -187,7 +186,7 @@ a:hover {
   list-style-type: none;          /* tar bort punkterna */
   margin: 60px auto 40px auto;
   padding-left: 0;                /* tar bort intryckningen från listor */
-  max-width: 600px;
+  max-width: 450px;
   text-align: left;
 }
 
@@ -211,15 +210,15 @@ a:hover {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   color: #2c004f;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0;
 }
 
 .news-date {
   font-weight: bold;
   color: rebeccapurple;
-  font-size: 1.05rem;
-  margin-right: 6px;
+  font-size: 1rem;
+  margin-right: 3px;
 }
 
 
@@ -229,6 +228,7 @@ a:hover {
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+  position: relative;
 }
 
 .image-block {
@@ -240,50 +240,58 @@ a:hover {
   border-radius: 10px;
 }
 
-.image-caption {
+.image-caption { /*texten under bilden */
   margin-top: 8px;
   font-style: italic;
   color: #444;
 }
 
-.image-and-news {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-  position: relative;
-}
-
 .news-box {
-  background-color: rgb(125, 67, 183);
-  border: 2px solid rebeccapurple;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid rebeccapurple;
   padding: 12px 16px;
-  border-radius: 8px;
-  max-width: 220px;
+  border-radius: 10px;
+  max-width: 300px;
   height: auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-top: 80px; /* justera detta värde för att flytta rutan nedåt */
+  transition: transform 0.2s, background-color 0.3s;
+  margin-bottom: 15px;
+  margin-top: 60px; /* justera detta värde för att flytta rutan nedåt */
+}
+.news-boxen { /*boxen brevid hästarnas bild*/
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid rebeccapurple;
+  padding: 12px 16px;
+  border-radius: 10px;
+  max-width: 200px;
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background-color 0.3s;
+  margin-bottom: 15px;
+  margin-top: 60px; /* justera detta värde för att flytta rutan nedåt */
 }
 
+
 .news-box p {
-  font-family: "Story Script", sans-serif; /* <-- välj teckensnitt här */
-  font-size: 20px;
+  font-family: "Poiret One", sans-serif; /* <-- välj teckensnitt här */
+  font-size: 1rem;
   line-height: 1.5;
-  color: black;
+  color: #2c004f;
+  margin-top: 0; /* tar bort extra mellanrum ovanför paragrafen */
 }
 .news-box h2 {
   text-align: justify;
-  font-family: "Story Script", sans-serif; 
-  color: cornsilk;
+  font-family: "Poiret One", sans-serif;
+  color: #2c004f;
   font-size: 2em;
   text-align: center;
+   margin-bottom: 0; /* minskar avståndet under rubriken */
 }
 
 .news-box h3 {
   text-align: justify;
   font-family: "Ephesis", cursive;
-  color: cornsilk;
+  color: #2c004f;
   font-size: 2em;
   text-align: center;
 }
