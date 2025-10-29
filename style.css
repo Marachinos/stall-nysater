@@ -144,6 +144,23 @@ a:hover {
   color: #3b0457;
 }
 
+nav a.active {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+}
+nav a.active:hover {
+  font-size: inherit;
+  /* behåll samma storlek */
+  text-decoration: none;
+  /* ingen underline eller liknande */
+  cursor: default;
+  /* ingen klick-hand */
+  transform: none;
+  /* om du använder t.ex. scale vid hover */
+}
+
 .grid {
   display: grid;
   column-gap: 20px;
@@ -221,6 +238,13 @@ a:hover {
   margin-right: 3px;
 }
 
+img {
+  width: 300px;
+  /* valfri storlek */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  /* valfritt – rundar hörnen lite */
+}
 
 .image-and-news {
   display: flex;
