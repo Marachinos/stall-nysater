@@ -1,4 +1,4 @@
-// index.js
+
 
 fetch("menu.html")
   .then(response => response.text())

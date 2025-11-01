@@ -1,0 +1,39 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown innehåll */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(79, 8, 107, 0.6);
+  /* ändra till din menyfärg */
+  min-width: 140px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Länkar i dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+}
+
+/* Visa dropdown vid hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style på knappen om du vill */
+.dropbtn.active {
+  font-weight: bold;
+  color: white;
+  /* exempel */
+}

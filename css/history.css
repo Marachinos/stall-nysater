@@ -1,0 +1,33 @@
+.history-list {
+  list-style-type: none;
+  /* tar bort punkterna */
+  margin: 60px auto 40px auto;
+  padding-left: 0;
+  /* tar bort intryckningen från listor */
+  max-width: 450px;
+  text-align: left;
+}
+
+.history-list li {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 4px solid rebeccapurple;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.history-list li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+.history-list p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #2c004f;
+  font-weight: bold;
+  margin: 0;
+}
