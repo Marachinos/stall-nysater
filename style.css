@@ -227,6 +227,7 @@ nav a.active:hover {
 
 .news-date {
   font-weight: bold;
+  font-style: italic;
   color: rebeccapurple;
   font-size: 1rem;
   margin-right: 3px;
