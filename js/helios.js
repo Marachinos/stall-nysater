@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     newsBox.classList.add("news-boxen");
     newsBox.innerHTML = `
       <h2>Senaste nytt</h2>
-      <p>19/6-25: Helios gör ett Premielopp på tiden 1.32,9</p>
+      <p>19/6-25: Helios gör ett Godkänt Premielopp på tiden 1.32,9</p>
     `;
 
     container.appendChild(newsBox);
